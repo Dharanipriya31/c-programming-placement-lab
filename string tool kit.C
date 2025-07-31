@@ -1,13 +1,14 @@
+
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
 
-//Function to find string length
+
 void findLength(char str[]){
 printf("Length of the string: %lu\n",strlen(str));
 }
 
-//Function to check if a string is a palindrome
+
 void checkPalindrome(char str[]){
 int len = strlen(str);
 bool isPalindrome = true;
@@ -26,14 +27,14 @@ else
 
 }
 
-//Function to copy one string to anothr
+
 void copyString(char source[]){
 char destination[100];
 strcpy(destination, source);
 printf("Copied string: %s\n", destination);
 }
 
-//Function to compare two string
+
 void compareString(char str1[]){
 char str2[100];
 printf("Enter another string to compare:");
@@ -46,12 +47,12 @@ else
 
 }
 
-//Main Function with menu
+
 int main(){
 char str[100];
 int choice;
 
-printf("enter a string: ");
+printf("Enter a string: ");
 scanf("%[^\n]", str);
 
 do{
